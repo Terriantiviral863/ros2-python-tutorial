@@ -1,0 +1,31 @@
+planner:
+  algorithm: a_star
+  resolution: 0.05
+  obstacle_threshold: 50
+  planning_timeout: 5.0
+
+controller:
+  type: dwa
+  max_vel_x: 0.5
+  min_vel_x: -0.2
+  max_vel_theta: 1.0
+  min_vel_theta: -1.0
+  acc_lim_x: 0.5
+  acc_lim_theta: 1.0
+  
+  goal_distance_tolerance: 0.2
+  goal_angle_tolerance: 0.1
+
+recovery:
+  enabled: true
+  behaviors:
+    - rotate_recovery
+    - backup_recovery
+  
+  rotate_recovery:
+    rotation_speed: 0.3
+    rotation_angle: 1.57
+  
+  backup_recovery:
+    backup_speed: -0.1
+    backup_distance: 0.3

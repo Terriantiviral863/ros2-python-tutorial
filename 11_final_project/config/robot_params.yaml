@@ -1,0 +1,28 @@
+robot_main:
+  ros__parameters:
+    update_rate: 10.0
+    state_timeout: 5.0
+
+sensor_manager:
+  ros__parameters:
+    laser_topic: /scan
+    camera_topic: /camera/image_raw
+    imu_topic: /imu/data
+    status_publish_rate: 1.0
+
+navigation_controller:
+  ros__parameters:
+    goal_tolerance: 0.2
+    obstacle_distance: 0.5
+    max_linear_velocity: 0.5
+    max_angular_velocity: 1.0
+    control_frequency: 10.0
+
+task_executor:
+  ros__parameters:
+    patrol_waypoints:
+      - [2.0, 0.0]
+      - [2.0, 2.0]
+      - [0.0, 2.0]
+      - [0.0, 0.0]
+    waypoint_tolerance: 0.3

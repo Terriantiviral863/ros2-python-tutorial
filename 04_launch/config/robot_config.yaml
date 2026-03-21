@@ -1,0 +1,38 @@
+# 机器人配置文件
+
+robot_controller:
+  ros__parameters:
+    # 基本信息
+    robot_id: "robot_alpha"
+    robot_type: "differential_drive"
+    
+    # 运动参数
+    max_linear_velocity: 2.0    # m/s
+    max_angular_velocity: 1.57  # rad/s
+    acceleration_limit: 1.0     # m/s²
+    
+    # 控制参数
+    control_frequency: 50.0     # Hz
+    pid_gains:
+      kp: 1.0
+      ki: 0.1
+      kd: 0.05
+    
+    # 安全参数
+    emergency_stop_distance: 0.3  # m
+    warning_distance: 1.0         # m
+    
+    # 传感器配置
+    sensors:
+      lidar:
+        enabled: true
+        topic: "/scan"
+        frame_id: "laser_frame"
+      camera:
+        enabled: true
+        topic: "/camera/image_raw"
+        frame_id: "camera_frame"
+      imu:
+        enabled: false
+        topic: "/imu/data"
+        frame_id: "imu_frame"

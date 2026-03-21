@@ -1,0 +1,14 @@
+# 斐波那契数列动作
+
+# 目标
+int32 order
+
+---
+
+# 结果
+int32[] sequence
+
+---
+
+# 反馈
+int32[] partial_sequence

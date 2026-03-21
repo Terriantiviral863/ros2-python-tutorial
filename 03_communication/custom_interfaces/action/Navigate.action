@@ -1,0 +1,21 @@
+# 导航动作
+
+# 目标
+geometry_msgs/Point target_position
+float32 target_orientation
+
+---
+
+# 结果
+bool success
+float32 final_distance_error
+float32 final_orientation_error
+float64 total_time
+
+---
+
+# 反馈
+geometry_msgs/Point current_position
+float32 distance_remaining
+float32 estimated_time_remaining
+float32 current_velocity

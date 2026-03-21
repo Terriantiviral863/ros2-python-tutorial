@@ -1,0 +1,22 @@
+laser_scanner:
+  frame_id: laser_link
+  angle_min: -3.14159
+  angle_max: 3.14159
+  angle_increment: 0.0174533
+  range_min: 0.1
+  range_max: 10.0
+  scan_time: 0.1
+
+camera:
+  frame_id: camera_link
+  width: 640
+  height: 480
+  fps: 30
+  encoding: bgr8
+
+imu:
+  frame_id: imu_link
+  update_rate: 100.0
+  orientation_covariance: 0.01
+  angular_velocity_covariance: 0.01
+  linear_acceleration_covariance: 0.01

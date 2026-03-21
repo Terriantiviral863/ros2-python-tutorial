@@ -1,0 +1,12 @@
+# 设置模式服务
+
+# 请求
+string mode  # MANUAL, AUTO, EMERGENCY
+string[] parameters
+
+---
+
+# 响应
+bool success
+string current_mode
+string message

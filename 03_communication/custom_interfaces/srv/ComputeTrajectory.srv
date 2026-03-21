@@ -1,0 +1,16 @@
+# 计算轨迹服务
+
+# 请求
+geometry_msgs/Point start
+geometry_msgs/Point goal
+float32 max_velocity
+float32 max_acceleration
+
+---
+
+# 响应
+geometry_msgs/Point[] trajectory
+float64 total_distance
+float64 estimated_time
+bool success
+string message

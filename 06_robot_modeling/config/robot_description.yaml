@@ -1,0 +1,16 @@
+robot_state_publisher:
+  ros__parameters:
+    robot_description: ""
+    publish_frequency: 50.0
+    ignore_timestamp: false
+    frame_prefix: ""
+    
+joint_state_publisher:
+  ros__parameters:
+    source_list: []
+    rate: 50.0
+    use_gui: false
+    
+joint_state_publisher_gui:
+  ros__parameters:
+    rate: 50.0

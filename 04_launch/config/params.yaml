@@ -1,0 +1,29 @@
+# ROS2参数配置文件示例
+
+# Talker节点参数
+talker:
+  ros__parameters:
+    message: "来自配置文件的消息"
+    publish_rate: 2.0
+    use_sim_time: false
+
+# Listener节点参数
+listener:
+  ros__parameters:
+    log_level: "info"
+    use_sim_time: false
+
+# 机器人参数
+robot:
+  ros__parameters:
+    robot_name: "robot_001"
+    max_velocity: 1.5
+    max_acceleration: 0.5
+    initial_position:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+    sensors:
+      - "lidar"
+      - "camera"
+      - "imu"

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>python_package_example</name>
+  <version>0.0.1</version>
+  <description>Python包示例 - 演示ROS2 Python包的结构</description>
+  <maintainer email="student@example.com">ROS2 Student</maintainer>
+  <license>Apache License 2.0</license>
+
+  <!-- 构建工具依赖 -->
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <!-- 运行时依赖 -->
+  <depend>rclpy</depend>
+  <depend>std_msgs</depend>
+
+  <!-- 测试依赖 -->
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

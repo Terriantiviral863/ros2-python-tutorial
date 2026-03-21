@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>cpp_package_example</name>
+  <version>0.0.1</version>
+  <description>C++包示例 - 演示ROS2 C++包的结构</description>
+  <maintainer email="student@example.com">ROS2 Student</maintainer>
+  <license>Apache License 2.0</license>
+
+  <!-- 构建工具依赖 -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- 依赖项（构建和运行时都需要） -->
+  <depend>rclcpp</depend>
+  <depend>std_msgs</depend>
+
+  <!-- 测试依赖 -->
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
