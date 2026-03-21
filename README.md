@@ -358,7 +358,7 @@ ros2-python-tutorial/
 
 ## 👨‍💻 作者
 
-**Your Name**
+**DdXd**
 
 - GitHub: [@ddxd001](https://github.com/ddxd001)
 - Email: d18797323123@qq.com
@@ -377,7 +377,7 @@ ros2-python-tutorial/
 
 如果这个项目对你有帮助，请给个Star支持一下！
 
-[![Star History Chart](https://api.star-history.com/svg?repos=yourusername/ros2-python-tutorial&type=Date)](https://star-history.com/#yourusername/ros2-python-tutorial&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=ddxd001/ros2-python-tutorial&type=Date)](https://star-history.com/#ddxd001/ros2-python-tutorial&Date)
 
 ---
 
