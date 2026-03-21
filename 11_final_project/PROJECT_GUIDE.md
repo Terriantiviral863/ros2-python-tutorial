@@ -8,31 +8,57 @@
 
 ## 快速开始
 
-### 1. 启动仿真环境
+**注意**: 本项目的示例是独立的Python脚本，可以直接运行，不需要构建ROS2包。
+
+### 1. 启动机器人主控制节点
 
 ```bash
-# 启动完整系统
-ros2 launch 11_final_project robot_bringup.py
+cd /home/jetson/ddxd/11_final_project
 
-# 启动导航系统
-ros2 launch 11_final_project navigation.py
-
-# 启动RViz可视化
-rviz2 -d config/robot.rviz
+# 启动主控制节点
+python3 robot_system/robot_main.py
 ```
 
-### 2. 发送导航目标
+### 2. 启动传感器管理器（新终端）
 
 ```bash
-# 使用目标发送器
-python3 11_final_project/robot_system/ui_interface.py
+cd /home/jetson/ddxd/11_final_project
+
+# 启动传感器管理器
+python3 robot_system/sensor_manager.py
 ```
 
-### 3. 执行巡逻任务
+### 3. 启动导航控制器（新终端）
 
 ```bash
-# 启动任务执行器
-python3 11_final_project/robot_system/task_executor.py --task patrol
+cd /home/jetson/ddxd/11_final_project
+
+# 启动导航控制器
+python3 robot_system/navigation_controller.py
+```
+
+### 4. 使用用户界面发送命令（新终端）
+
+```bash
+cd /home/jetson/ddxd/11_final_project
+
+# 启动交互式界面
+python3 robot_system/ui_interface.py
+```
+
+### 5. 或者直接执行任务
+
+```bash
+cd /home/jetson/ddxd/11_final_project
+
+# 执行巡逻任务
+python3 robot_system/task_executor.py patrol
+
+# 前往指定位置
+python3 robot_system/task_executor.py goto 2.0 1.5
+
+# 停止任务
+python3 robot_system/task_executor.py stop
 ```
 
 ---
